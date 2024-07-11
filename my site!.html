@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="content">
+        <h2>Visit Counter:</h2>
+        <p id="visitCount">Loading...</p>
+    </div>
+
+    <script>
+        // Function to get and update visit count
+        function updateVisitCount() {
+            let visitCount = localStorage.getItem('visitCount');
+            visitCount = visitCount ? parseInt(visitCount) + 1 : 1;
+            localStorage.setItem('visitCount', visitCount);
+            document.getElementById('visitCount').textContent = visitCount;
+        }
+
+        // Call the function on page load
+        updateVisitCount();
+    </script>
+    <style>
+        header {
+            background-color: orangered;
+            text-align: center;
+            border-bottom: 10px solid #8a8585;
+            padding: 20px 0;
+        }
+        nav ul li{
+            font-size: x-large;
+            font-weight: bold;
+        }
+     h1 {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site:D</title>
+</head>
+<body>
+    <header>
+        <h1>yippe!</h1>
+            </header>
+
+            <h1> welcome to my site! </h1>
+            <h1>
+                <font color="orangered">yay thanks for coming:D</font>
+            </h1>
+            <img 
+            src="c:\Users\ozdeg\OneDrive\Masaüstü\microsoftflightsim/nyancat.gif"
+</body>
+</html>
